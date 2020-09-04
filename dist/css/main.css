@@ -56,8 +56,29 @@
       width: 25rem;
       height: 25rem;
       background: url("../img/profile.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       border-radius: 50%;
       border: solid 0.3rem #279739; }
+  .menu .nav-item {
+    transform: translate3d(60rem, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu .nav-item.show {
+      transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #279739; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+    padding: 2rem 0;
+    font-weight: 30rem;
+    color: set-text-color(#444);
+    text-decoration: none;
+    transition: all 0.5s ease-out; }
+    .menu .nav-link:hover {
+      color: #279739; }
 
 * {
   box-sizing: border-box; }
